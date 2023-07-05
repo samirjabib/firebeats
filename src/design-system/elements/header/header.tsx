@@ -1,6 +1,6 @@
-import LogoFireBeats from "../logo/logo-fire-beats";
-import { ShoppingBag, User, Search } from "lucide-react"
+
 import NavigationDesktop from "./desktop/navigation-desktop";
+import NavigationMobile from "./mobile/navigation-mobile";
 
 const dummieData = [
   {
@@ -24,15 +24,8 @@ const Header = () => {
   return (
     <header className="z-20 w-full">
       <nav className="wrapper-mobile wrapper flex justify-between w-full items-center py-3">
-        <LogoFireBeats />
-        <div>
-          <NavigationDesktop links={dummieData}/>
-        </div>
-        <div className="flex flex-row gap-x-6">
-          <User />
-          <Search />
-          <ShoppingBag />
-        </div>
+        <NavigationDesktop links={dummieData} />
+        <NavigationMobile links={dummieData} />
       </nav>
     </header>
   );

@@ -1,11 +1,8 @@
-import Link from "next/link"
 import { FC } from "react"
-
-type NavLink = {
-    id: number,
-    name: string,
-    href: string
-}
+import LogoFireBeats from "../../logo/logo-fire-beats"
+import { ShoppingBag, User, Search } from "lucide-react"
+import { NavLink } from "../types"
+import NavLinksDesktop from "./nav-links-desktop"
 
 type NavigationDesktopProps = {
     links: NavLink[]
@@ -13,16 +10,19 @@ type NavigationDesktopProps = {
 }
 
 const NavigationDesktop: FC<NavigationDesktopProps> = ({ links }) => {
-
     return (
-        <ul className="flex flex-row gap-x-6">
-            {links.map(({ id, href, name }) => (
-                <li key={name} className="relative text-sm w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary-foreground after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
-                    <Link href={href}>{name}</Link>
-                </li>
-            ))
-            }
-        </ul>
+        <nav className="wrapper-mobile wrapper flex justify-between w-full items-center py-3">
+            <LogoFireBeats />
+            <div>
+                <NavLinksDesktop links={links} />
+            </div>
+            <div className="flex flex-row gap-x-6">
+                <User />
+                <Search />
+                <ShoppingBag />
+            </div>
+        </nav>
+
     )
 }
 
