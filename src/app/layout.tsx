@@ -1,5 +1,5 @@
-import Footer from "./components/footer/footer";
-import Header from "./components/header/header";
+
+import { Footer, Header, TopBanner } from "@/design-system";
 import "./global.css";
 import "./styles/globals.css";
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {" "}
+        <TopBanner/>
         <Header />
         {children}
         <Footer />
