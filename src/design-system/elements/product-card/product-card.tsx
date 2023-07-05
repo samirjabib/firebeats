@@ -1,42 +1,27 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import dummieImage from '../../../../public/product/mock-image.png'
+import Link from "next/link"
+import Title from "@/design-system/typography/title/title"
 
-const ProductCard = ({ product }:any) => {
-  const id = product.node.id;
-  const handle = product.node.handle;
-  const title = product.node.title;
-  const imageNode = product.node.images.edges[0].node;
-  const price = product.node.priceRange.maxVariantPrice.amount.replace(
-    /\.0/g,
-    ""
-  );
-
+const ProductCard = () => {
   return (
-    <div
-      className="
-    w-full
-    md:w-1/2
-    lg:w-1/3
-    p-2
-  "
-    >
-      <Link href={`/${handle}`} passHref>
-        <Image
-          alt=""
-          src={imageNode.url}
-          width={imageNode.width}
-          height={imageNode.height}
-          className="w-full h-auto"
-        />
-      </Link>
-      <div>
-        <p className="text-center text-l font-semibold mx-4 mt-4 mb-1">
-          {title}
-        </p>
-        <p className="text-center text-gray-700 mb-4">${price}</p>
+    <Link className="cursor-pointer" href='/'>
+      <div className="relative">
+        <p className="absolute right-8 top-8 bg-green-500 px-3 text-xs py-1 rounded-full shadow-2xl">New</p>
+        <Image src={dummieImage} alt="dummie-image" className="" />
       </div>
-    </div>
-  );
-};
+      <div className="flex flex-col text-center justify-center">
+        <Title as="h3" size={"textTitle"}>Atlanta Pack Premium</Title>
+        <div className="flex flex-row items-center justify-center gap-x-2">
+          <div className="inline-block relative text-white/60">
+            <p>$260.00</p>
+            <div className="flex-grow  h-0.5 absolute w-full top-[50%] bg-[#D16014]"></div>
+          </div>
+          <p className="font-bold">$57.00</p>
+        </div>
+      </div>
+    </Link>
+  )
+}
 
-export default ProductCard;
+export default ProductCard

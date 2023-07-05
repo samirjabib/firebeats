@@ -1,9 +1,9 @@
 
-import { Footer, Header, TopBanner } from "@/design-system";
 import "./global.css";
 import "./styles/globals.css";
 
 import { Inter } from "next/font/google";
+import RootProvider from "@/components/providers/root-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TopBanner/>
-        <Header />
-        {children}
-        <Footer />
+        <RootProvider>
+          {children}
+        </RootProvider>
       </body>
     </html>
   );
