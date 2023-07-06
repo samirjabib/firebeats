@@ -12,9 +12,9 @@ export default async function Home({
   const { sort, q: searchValue } = searchParams as { [key: string]: string };
   const { sortKey, reverse } =
     sorting.find((item) => item.slug === sort) || defaultSort;
+  console.log(reverse);
 
   const products = await getProducts({ sortKey, reverse, query: searchValue });
-  console.log(products);
 
   return (
     <main className="">

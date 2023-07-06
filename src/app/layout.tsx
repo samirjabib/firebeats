@@ -1,11 +1,10 @@
-
 import "./global.css";
 import "./styles/globals.css";
 
-import { Inter } from "next/font/google";
+import { Oswald } from "next/font/google";
 import RootProvider from "@/components/providers/root-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const oswald = Oswald({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,10 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <RootProvider>
-          {children}
-        </RootProvider>
+      <body className={oswald.className}>
+        <RootProvider>{children}</RootProvider>
       </body>
     </html>
   );
