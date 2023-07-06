@@ -5,7 +5,7 @@ const LandingArtist = () => {
     return (
         <div className="wrapper wrapper-mobile flex items-center flex-col py-20">
             <Title as="h4" size={"sectionSubtitle"} className="text-center text-white/60">
-                Sobre nosotros
+                Inspiracion
             </Title>
             <Title as="h2" size={"sectionTitle"} className="text-center max-w-3xl pb-16">
                 Descubre nuestro sonido exclusivo inspirado en los artistas del momento.
