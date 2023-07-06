@@ -10,42 +10,37 @@ import juiceWrld from './juice-wrld.jpg'
 const dataDummieArtist = [
     {
         id:1,
-        image:'https://instagram.feoh8-1.fna.fbcdn.net/v/t51.2885…fZCWWCTJgIYWRRJjfaeT8g&oe=64AAD68C&_nc_sid=2999b8',
+        image:'https://res.cloudinary.com/dnoeqtok8/image/upload/v1688595993/q7jyy8ofpzz07g96ii19.jpg',
         name:'anuel'
     },
     {
         id:2,
-        image:'https://instagram.feoh8-1.fna.fbcdn.net/v/t51.2885…O3u6F9ljGvJt0pJDq0wrbg&oe=64AA1AB0&_nc_sid=2999b8',
+        image:'https://res.cloudinary.com/dnoeqtok8/image/upload/v1688595993/h32qn97so5cs6vdcnfpp.jpg',
         name:'eladio'
 
     },
     {
         id:3,
-        image:'https://instagram.feoh8-1.fna.fbcdn.net/v/t51.2885…v879yzT0aUJriKMmOiy1uw&oe=64ABCE35&_nc_sid=2999b8',
+        image:'https://res.cloudinary.com/dnoeqtok8/image/upload/v1688595993/ptmg1hd29mzs5hrob95a.jpg',
         name:'lil baby'
 
     },
     {
         id:4,
-        image:'https://instagram.feoh8-1.fna.fbcdn.net/v/t51.2885…Iq3lfsxJRBQ4iC4VK9GxTw&oe=64AB47A8&_nc_sid=2999b8',
+        image:'https://res.cloudinary.com/dnoeqtok8/image/upload/v1688595993/qixm50vmjaahryzlbbeg.jpg',
         name:'luar la l'
 
     },
     {
         id:5,
-        image:'https://instagram.feoh8-1.fna.fbcdn.net/v/t51.2885…TO5viE6VfcvWzzlmju1bwg&oe=64AADB23&_nc_sid=2999b8',
+        image:'https://res.cloudinary.com/dnoeqtok8/image/upload/v1688595993/pkuxns9zejnf8ajvdqbe.jpg',
         name:'ryan castro'
     },
     {
         id:6,
-        image:'https://instagram.feoh8-1.fna.fbcdn.net/v/t51.2885…dECfeQX2CX2Vq9YcwmfnKw&oe=64A9EB7D&_nc_sid=2999b8',
+        image:'https://res.cloudinary.com/dnoeqtok8/image/upload/v1688595993/gh1mm8jh0m7ll2xhybqb.jpg',
         name:'blessed'
     },
-    {
-        id:7,
-        image:'https://instagram.feoh8-1.fna.fbcdn.net/v/t51.2885…q0ln7hmFeBnY4j3J8vhlLA&oe=64ABD5A4&_nc_sid=2999b8',
-        name:'Travis Scott'
-    }
 ]
 
 export default dataDummieArtist
