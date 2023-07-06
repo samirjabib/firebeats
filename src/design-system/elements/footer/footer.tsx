@@ -1,11 +1,12 @@
-// components/footer.js
+
+import LogoFireBeats from "../logo/logo-fire-beats";
 
 const Footer = () => {
   return (
     <footer className="py-4 text-center">
-      <p>A Next.js-Shopify storefront in construccion by Samir Jabib</p>
+      <LogoFireBeats />
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
