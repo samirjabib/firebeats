@@ -6,7 +6,7 @@ import Title from "@/design-system/typography/title/title";
 const ProductCard = () => {
   return (
     <Link
-      className="cursor-pointer transition-all duration-200 hover:scale-95 hover:bg-white/20 p-4"
+      className="cursor-pointer transition-all duration-200 hover:scale-95 hover:bg-white/20 p-4 rounded-md"
       href="/"
     >
       <div className="relative">
