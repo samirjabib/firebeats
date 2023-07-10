@@ -1,5 +1,5 @@
 import { Button, Title } from "@/design-system";
-import Video from "../shared/Video";
+import Video from "../shared/video";
 
 const LandingFidalize = () => {
   return (
