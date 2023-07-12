@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+
   reactStrictMode: true,
   eslint: {
     // Disabling on production builds because we're running checks on PRs via GitHub Actions.
@@ -27,6 +28,7 @@ const nextConfig = {
       }
     ],
   },
+
 };
 
 module.exports = nextConfig;
